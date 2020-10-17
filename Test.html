@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
 			body {
-				font-family: 'Consolas', Times, sans-serif;
+				font-family: 'Source Sans Pro', Times, sans-serif;
 			}
 		</style>
 	</head>
@@ -18,8 +18,9 @@
 	.header {
 		padding: 50px;
 		text-align: center;
-		background: #0984e3;
+		background: #2e86de;
 		color: whitesmoke;
+		font-family: 'Consolas', Times, sans-serif;
 	}
 	.header h1 {
 		font-size: 40px;
@@ -31,7 +32,7 @@
 	.navbar a {
 		float: left;
 		display: block;
-		color: white;
+		color: whitesmoke;
 		text-align: center;
 		padding: 14px 20px;
 		text-decoration: none;
@@ -41,7 +42,7 @@
 		float: right;
 	}
 	.navbar a:hover {
-		background-color: #ddd;
+		background-color:whitesmoke;
 		color: black;
 	}
 	* {
@@ -58,9 +59,38 @@
 			width: 100%;
 		}
 	}
-	.row {
+	.row1{
 		display: flex;
 		flex-wrap: wrap;
+	}
+	.row2 {
+		display: flex;
+		flex-wrap: wrap;
+		padding-left: 3%;
+		padding-bottom: 3%;
+		padding-right: 3%;
+		background: whitesmoke
+	}
+	.row3 {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.about{
+		flex: 100%;
+		background: whitesmoke;
+		color: #2e86de;
+		font-family: 'Consolas', Times, sans-serif;
+	}
+	.mypic {
+		flex: 30%;
+		background: whitesmoke;
+		color: whitesmoke;
+	}
+	.me {
+		flex: 70%;
+		background: whitesmoke;
+		color: grey;
+		font-family: 'Consolas', 'Times', sans-serif;
 	}
 	.images {
 		flex: 30%;
@@ -75,7 +105,7 @@
 	.footer {
 		padding: 20px;
 		text-align: center;
-		background: #ddd;
+		background: whitesmoke;
 	}
 </style>
 
@@ -88,14 +118,36 @@
 	</p>
 </div>
 
-<div class = "navbar">
-	<a href="#"> Link</a>
-	<a href="#"> Link</a>
-	<a href="#"> Link</a>
-	<a href="#" class = "right"> Link</a>
+<div class="row1">
+	<div class="about">
+		<h1 style="text-align: center;">
+			About Me!
+		</h1>
+	</div>
 </div>
 
-<div class="row">
+<div class="row2">
+	<div class="mypic">
+		<a href="https://github.com/AliRZ-02" 
+			style="text-decoration: none;">
+			<img src="PFP.jpg" alt="That's Me!"
+			width="400" height="400" style="align-self:center;"></a>
+	</div>
+	<div class="me">
+		<p style="margin-left: 3%;"> 
+			I'm a software developer working to create solutions for 
+			problems faced by our increasingly global and interconnected 
+			world. I have been solving problems since before I can even 
+			remember and I don't plan on stopping anytime soon! 
+			I have worked on creating mobile applications, desktop 
+			applications and a wide range of other software. 
+			Recently, I've been working to learn Python and its Data 
+			Science applications.
+		</p>
+	</div>
+</div>
+
+<div class="row3">
 	<div class="main">
 			<h1 style="text-align: center;">
 				Projects
